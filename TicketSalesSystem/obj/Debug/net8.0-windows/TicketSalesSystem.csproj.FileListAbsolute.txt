@@ -133,3 +133,9 @@ D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Tick
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem.genruntimeconfig.cache
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\ref\TicketSalesSystem.dll
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem.sourcelink.json
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\LoginView.baml
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\TicketSaleView.baml
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\UserManagementView.baml
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\LoginView.g.cs
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\TicketSaleView.g.cs
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\UserManagementView.g.cs

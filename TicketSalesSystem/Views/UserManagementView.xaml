@@ -1,0 +1,20 @@
+﻿<Window x:Class="TicketSalesSystem.Views.UserManagementView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="User Management" Height="400" Width="600">
+    <Grid>
+        <DataGrid x:Name="dgUsers" AutoGenerateColumns="False" Margin="20">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Login" Binding="{Binding Login}" Width="150"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="200"/>
+                <DataGridTextColumn Header="Role" Binding="{Binding UserRole}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 20 0 0">
+            <Button Content="Add User" Width="100" Margin="10"/>
+            <Button Content="Edit User" Width="100" Margin="10"/>
+            <Button Content="Delete User" Width="100" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
