@@ -132,3 +132,4 @@ D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\refi
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem.pdb
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem.genruntimeconfig.cache
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\ref\TicketSalesSystem.dll
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem.sourcelink.json
