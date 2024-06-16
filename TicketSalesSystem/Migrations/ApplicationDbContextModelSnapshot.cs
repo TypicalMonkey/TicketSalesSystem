@@ -17,11 +17,64 @@ namespace TicketSalesSystem.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.6");
 
+            modelBuilder.Entity("RouteStation", b =>
+                {
+                    b.Property<int>("RouteId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("StationsId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("RouteId", "StationsId");
+
+                    b.HasIndex("StationsId");
+
+                    b.ToTable("RouteStations", (string)null);
+                });
+
+            modelBuilder.Entity("TicketSalesSystem.Models.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands", (string)null);
+                });
+
+            modelBuilder.Entity("TicketSalesSystem.Models.Model", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Models", (string)null);
+                });
+
             modelBuilder.Entity("TicketSalesSystem.Models.Route", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("ArrivalStation")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DepartureStation")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("DepartureTime")
                         .HasColumnType("TEXT");
@@ -30,9 +83,14 @@ namespace TicketSalesSystem.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("TrainId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Routes");
+                    b.HasIndex("TrainId");
+
+                    b.ToTable("Routes", (string)null);
                 });
 
             modelBuilder.Entity("TicketSalesSystem.Models.Station", b =>
@@ -48,14 +106,9 @@ namespace TicketSalesSystem.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("RouteId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("RouteId");
-
-                    b.ToTable("Stations");
+                    b.ToTable("Stations", (string)null);
                 });
 
             modelBuilder.Entity("TicketSalesSystem.Models.Ticket", b =>
@@ -78,7 +131,7 @@ namespace TicketSalesSystem.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tickets");
+                    b.ToTable("Tickets", (string)null);
                 });
 
             modelBuilder.Entity("TicketSalesSystem.Models.Train", b =>
@@ -91,13 +144,14 @@ namespace TicketSalesSystem.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Brand")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("BrandId")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Model")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<bool>("HasWifi")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ModelId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("Seats")
                         .HasColumnType("INTEGER");
@@ -107,7 +161,11 @@ namespace TicketSalesSystem.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Trains");
+                    b.HasIndex("BrandId");
+
+                    b.HasIndex("ModelId");
+
+                    b.ToTable("Trains", (string)null);
                 });
 
             modelBuilder.Entity("TicketSalesSystem.Models.User", b =>
@@ -133,19 +191,52 @@ namespace TicketSalesSystem.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
-            modelBuilder.Entity("TicketSalesSystem.Models.Station", b =>
+            modelBuilder.Entity("RouteStation", b =>
                 {
                     b.HasOne("TicketSalesSystem.Models.Route", null)
-                        .WithMany("Stations")
-                        .HasForeignKey("RouteId");
+                        .WithMany()
+                        .HasForeignKey("RouteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TicketSalesSystem.Models.Station", null)
+                        .WithMany()
+                        .HasForeignKey("StationsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("TicketSalesSystem.Models.Route", b =>
                 {
-                    b.Navigation("Stations");
+                    b.HasOne("TicketSalesSystem.Models.Train", "Train")
+                        .WithMany()
+                        .HasForeignKey("TrainId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Train");
+                });
+
+            modelBuilder.Entity("TicketSalesSystem.Models.Train", b =>
+                {
+                    b.HasOne("TicketSalesSystem.Models.Brand", "Brand")
+                        .WithMany()
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TicketSalesSystem.Models.Model", "Model")
+                        .WithMany()
+                        .HasForeignKey("ModelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Brand");
+
+                    b.Navigation("Model");
                 });
 #pragma warning restore 612, 618
         }

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Projects\\C#\\TicketSalesSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|d:\\projects\\c#\\ticketsalessystem\\ticketsalessystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|d:\\projects\\c#\\ticketsalessystem\\ticketsalessystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|d:\\projects\\c#\\ticketsalessystem\\ticketsalessystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|d:\\projects\\c#\\ticketsalessystem\\ticketsalessystem\\views\\registerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\registerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|d:\\projects\\c#\\ticketsalessystem\\ticketsalessystem\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|d:\\projects\\c#\\ticketsalessystem\\ticketsalessystem\\views\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|d:\\projects\\c#\\ticketsalessystem\\ticketsalessystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|d:\\projects\\c#\\ticketsalessystem\\ticketsalessystem\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,48 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\App.xaml",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\App.xaml",
-              "ToolTip": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\App.xaml",
-              "RelativeToolTip": "TicketSalesSystem\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-15T13:23:48.663Z",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TicketSalesSystem\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TicketSalesSystem\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAgwEcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T11:40:33.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\MainWindow.xaml.cs",
-              "RelativeToolTip": "TicketSalesSystem\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T13:20:12.037Z",
+              "DocumentIndex": 2,
+              "Title": "RegisterView.xaml",
+              "DocumentMoniker": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Views\\RegisterView.xaml",
+              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\RegisterView.xaml",
+              "ToolTip": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Views\\RegisterView.xaml",
+              "RelativeToolTip": "TicketSalesSystem\\Views\\RegisterView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-16T11:21:33.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\MainWindow.xaml",
-              "ToolTip": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\MainWindow.xaml",
-              "RelativeToolTip": "TicketSalesSystem\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-15T12:57:30.102Z",
+              "Title": "RegisterView.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Views\\RegisterView.xaml.cs",
+              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\RegisterView.xaml.cs",
+              "ToolTip": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Views\\RegisterView.xaml.cs",
+              "RelativeToolTip": "TicketSalesSystem\\Views\\RegisterView.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwDEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T11:21:16.204Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginView.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Views\\LoginView.xaml.cs",
+              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\LoginView.xaml.cs",
+              "ToolTip": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Views\\LoginView.xaml.cs",
+              "RelativeToolTip": "TicketSalesSystem\\Views\\LoginView.xaml.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwCQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T11:20:41.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "TicketSalesSystem\\Services\\UserService.cs",
+              "ToolTip": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\Services\\UserService.cs",
+              "RelativeToolTip": "TicketSalesSystem\\Services\\UserService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwBcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T11:15:31.445Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -23,49 +23,77 @@ namespace TicketSalesSystem.Data
             base.OnModelCreating(modelBuilder);
 
             // Konfiguracja dla User
-            modelBuilder.Entity<User>().ToTable("Users");
-            modelBuilder.Entity<User>().HasKey(u => u.Id);
-            modelBuilder.Entity<User>().Property(u => u.Username).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.Password).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.Email).IsRequired();
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.ToTable("Users");
+                entity.HasKey(u => u.Id);
+                entity.Property(u => u.Id).ValueGeneratedOnAdd(); // Auto increment
+                entity.Property(u => u.Username).IsRequired();
+                entity.Property(u => u.Password).IsRequired();
+                entity.Property(u => u.Email).IsRequired();
+            });
 
             // Konfiguracja dla Train
-            modelBuilder.Entity<Train>().ToTable("Trains");
-            modelBuilder.Entity<Train>().HasKey(t => t.Id);
-            modelBuilder.Entity<Train>().Property(t => t.BrandId).IsRequired();
-            modelBuilder.Entity<Train>().Property(t => t.ModelId).IsRequired();
-            modelBuilder.Entity<Train>().Property(t => t.Seats).IsRequired();
-            modelBuilder.Entity<Train>().Property(t => t.Year).IsRequired();
-            modelBuilder.Entity<Train>().Property(t => t.HasWifi).IsRequired();
-            modelBuilder.Entity<Train>().Property(t => t.AdditionalInfo);
+            modelBuilder.Entity<Train>(entity =>
+            {
+                entity.ToTable("Trains");
+                entity.HasKey(t => t.Id);
+                entity.Property(t => t.Id).ValueGeneratedOnAdd(); // Auto increment
+                entity.Property(t => t.BrandId).IsRequired();
+                entity.Property(t => t.ModelId).IsRequired();
+                entity.Property(t => t.Seats).IsRequired();
+                entity.Property(t => t.Year).IsRequired();
+                entity.Property(t => t.HasWifi).IsRequired();
+                entity.Property(t => t.AdditionalInfo);
+            });
 
             // Konfiguracja dla Route
-            modelBuilder.Entity<Route>().ToTable("Routes");
-            modelBuilder.Entity<Route>().HasKey(r => r.Id);
-            modelBuilder.Entity<Route>().Property(r => r.Name).IsRequired();
-            modelBuilder.Entity<Route>().HasMany(r => r.Stations).WithMany().UsingEntity(j => j.ToTable("RouteStations"));
+            modelBuilder.Entity<Route>(entity =>
+            {
+                entity.ToTable("Routes");
+                entity.HasKey(r => r.Id);
+                entity.Property(r => r.Id).ValueGeneratedOnAdd(); // Auto increment
+                entity.Property(r => r.Name).IsRequired();
+                entity.HasMany(r => r.Stations).WithMany().UsingEntity(j => j.ToTable("RouteStations"));
+            });
 
             // Konfiguracja dla Station
-            modelBuilder.Entity<Station>().ToTable("Stations");
-            modelBuilder.Entity<Station>().HasKey(s => s.Id);
-            modelBuilder.Entity<Station>().Property(s => s.Name).IsRequired();
+            modelBuilder.Entity<Station>(entity =>
+            {
+                entity.ToTable("Stations");
+                entity.HasKey(s => s.Id);
+                entity.Property(s => s.Id).ValueGeneratedOnAdd(); // Auto increment
+                entity.Property(s => s.Name).IsRequired();
+            });
 
             // Konfiguracja dla Ticket
-            modelBuilder.Entity<Ticket>().ToTable("Tickets");
-            modelBuilder.Entity<Ticket>().HasKey(t => t.Id);
-            modelBuilder.Entity<Ticket>().Property(t => t.RouteId).IsRequired();
-            modelBuilder.Entity<Ticket>().Property(t => t.PurchaseDate).IsRequired();
-            modelBuilder.Entity<Ticket>().Property(t => t.Price).IsRequired();
+            modelBuilder.Entity<Ticket>(entity =>
+            {
+                entity.ToTable("Tickets");
+                entity.HasKey(t => t.Id);
+                entity.Property(t => t.Id).ValueGeneratedOnAdd(); // Auto increment
+                entity.Property(t => t.RouteId).IsRequired();
+                entity.Property(t => t.PurchaseDate).IsRequired();
+                entity.Property(t => t.Price).IsRequired();
+            });
 
             // Konfiguracja dla Model
-            modelBuilder.Entity<Model>().ToTable("Models");
-            modelBuilder.Entity<Model>().HasKey(m => m.Id);
-            modelBuilder.Entity<Model>().Property(m => m.Name).IsRequired();
+            modelBuilder.Entity<Model>(entity =>
+            {
+                entity.ToTable("Models");
+                entity.HasKey(m => m.Id);
+                entity.Property(m => m.Id).ValueGeneratedOnAdd(); // Auto increment
+                entity.Property(m => m.Name).IsRequired();
+            });
 
             // Konfiguracja dla Brand
-            modelBuilder.Entity<Brand>().ToTable("Brands");
-            modelBuilder.Entity<Brand>().HasKey(b => b.Id);
-            modelBuilder.Entity<Brand>().Property(b => b.Name).IsRequired();
+            modelBuilder.Entity<Brand>(entity =>
+            {
+                entity.ToTable("Brands");
+                entity.HasKey(b => b.Id);
+                entity.Property(b => b.Id).ValueGeneratedOnAdd(); // Auto increment
+                entity.Property(b => b.Name).IsRequired();
+            });
         }
     }
 }

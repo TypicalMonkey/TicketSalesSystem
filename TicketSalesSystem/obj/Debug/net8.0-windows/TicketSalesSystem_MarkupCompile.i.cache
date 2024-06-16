@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\App.xaml
-8-30556482
+8271335389
 
-30314120505
+331873793744
 216-1897257280
-MainWindow.xaml;Views\AdministratorView.xaml;Views\CashierView.xaml;Views\LoginView.xaml;Views\RouteManagerView.xaml;Views\TicketSaleView.xaml;Views\UserManagementView.xaml;Views\UserView.xaml;
+MainWindow.xaml;Views\AdminView.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\RouteManagerView.xaml;Views\TicketSaleView.xaml;Views\UserManagementView.xaml;Views\UserView.xaml;
 
 False
 

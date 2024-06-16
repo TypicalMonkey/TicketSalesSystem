@@ -109,16 +109,12 @@ D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\bin\Debug\net8.0-windows\runt
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem.csproj.AssemblyReference.cache
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\MainWindow.g.cs
-D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\AdministratorView.g.cs
-D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\CashierView.g.cs
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\RouteManagerView.g.cs
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\UserView.g.cs
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\App.g.cs
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem_MarkupCompile.cache
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem_MarkupCompile.lref
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\MainWindow.baml
-D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\AdministratorView.baml
-D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\CashierView.baml
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\RouteManagerView.baml
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\UserView.baml
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\TicketSalesSystem.g.resources
@@ -139,3 +135,7 @@ D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\View
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\LoginView.g.cs
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\TicketSaleView.g.cs
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\UserManagementView.g.cs
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\AdminView.baml
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\RegisterView.baml
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\AdminView.g.cs
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\RegisterView.g.cs

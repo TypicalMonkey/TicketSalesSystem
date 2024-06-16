@@ -8,7 +8,8 @@
             <TextBox x:Name="txtLogin" Margin="0 0 0 10"/>
             <TextBlock Text="Password" Margin="0 0 0 5"/>
             <PasswordBox x:Name="txtPassword" Margin="0 0 0 10"/>
-            <Button Content="Login" Click="BtnLogin_Click" Width="100"/>
+            <Button Content="Login" Click="BtnLogin_Click" Width="100" Margin="0 0 0 10"/>
+            <Button Content="Register" Click="BtnRegister_Click" Width="100"/>
         </StackPanel>
     </Grid>
 </Window>

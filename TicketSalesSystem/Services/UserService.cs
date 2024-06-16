@@ -13,23 +13,29 @@ namespace TicketSalesSystem.Services
             _context = context;
         }
 
-        public User Login(string login, string password)
+        public User Login(string username, string password)
         {
-            return _context.Users.FirstOrDefault(u => u.Username == login && u.Password == password);
+            return _context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
         }
 
-        public void Register(string login, string password, string email, UserRole role)
+        public bool Register(string username, string password, string email)
         {
+            if (_context.Users.Any(u => u.Username == username))
+            {
+                return false; 
+            }
+
             var newUser = new User
             {
-                Username = login,
+                Username = username,
                 Password = password,
                 Email = email,
-                UserRole = role
+                UserRole = UserRole.User 
             };
 
             _context.Users.Add(newUser);
             _context.SaveChanges();
+            return true;
         }
 
         public User GetUserById(int userId)

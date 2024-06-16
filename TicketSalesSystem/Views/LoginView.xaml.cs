@@ -24,24 +24,29 @@ namespace TicketSalesSystem.Views
 
             if (user != null)
             {
-
                 switch (user.UserRole)
                 {
                     case UserRole.Admin:
-                        break;
-                    case UserRole.Cashier:
+                        AdminView adminView = new AdminView();
+                        adminView.Show();
                         break;
                     case UserRole.User:
-                        break;
-                    default:
-                        MessageBox.Show("Nieprawidłowa rola użytkownika.");
+                        UserView userView = new UserView();
+                        userView.Show();
                         break;
                 }
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Nieprawidłowy login lub hasło.");
+                MessageBox.Show("Invalid login or password.");
             }
+        }
+
+        private void BtnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterView registerView = new RegisterView();
+            registerView.ShowDialog();
         }
     }
 }

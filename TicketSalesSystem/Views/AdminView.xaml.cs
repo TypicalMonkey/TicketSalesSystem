@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace TicketSalesSystem.Views
 {
     /// <summary>
-    /// Logika interakcji dla klasy CashierView.xaml
+    /// Logika interakcji dla klasy AdminView.xaml
     /// </summary>
-    public partial class CashierView : Window
+    public partial class AdminView : Window
     {
-        public CashierView()
+        public AdminView()
         {
             InitializeComponent();
         }
