@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicketSalesSystem.Models
 {
-    internal class Train
+    public class Train
     {
         public int Id { get; set; }
         public int BrandId { get; set; }

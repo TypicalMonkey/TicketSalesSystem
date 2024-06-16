@@ -12,7 +12,25 @@ namespace TicketSalesSystem.Services
         {
             _context = context;
         }
+        public List<User> GetAllUsers()
+        {
+            return _context.Users.ToList();
+        }
 
+        public void DeleteUser(int userId)
+        {
+            var user = _context.Users.Find(userId);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+                _context.SaveChanges();
+            }
+        }
+
+        public List<Route> GetAllRoutes()
+        {
+            return _context.Routes.ToList();
+        }
         public void AddNewTrain(int brandId, int modelId, int seats, int year, bool hasWifi, string additionalInfo)
         {
             var newTrain = new Train

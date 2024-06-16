@@ -33,6 +33,17 @@ namespace TicketSalesSystem.Data
                 entity.Property(u => u.Email).IsRequired();
             });
 
+            modelBuilder.Entity<User>().HasData(
+                new User
+                {
+                    Id = 1,
+                    Username = "admin",
+                    Password = "admin",
+                    Email = "pancerny677@interia.pl",
+                    UserRole = UserRole.Admin
+                }
+            );
+
             // Konfiguracja dla Train
             modelBuilder.Entity<Train>(entity =>
             {

@@ -1,27 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using TicketSalesSystem.Data;
+using TicketSalesSystem.Services;
 
 namespace TicketSalesSystem.Views
 {
-    /// <summary>
-    /// Logika interakcji dla klasy AdminView.xaml
-    /// </summary>
     public partial class AdminView : Window
     {
+        private readonly AdminService _adminService;
+
         public AdminView()
         {
             InitializeComponent();
+            _adminService = new AdminService(new ApplicationDbContext());
+            LoadUsers();
+        }
+
+        private void LoadUsers()
+        {
+            dgUsers.ItemsSource = _adminService.GetAllUsers();
         }
     }
 }

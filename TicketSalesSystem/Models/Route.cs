@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TicketSalesSystem.Models
 {
-    internal class Route
+    public class Route
     {
         public int Id { get; set; }
         public string Name { get; set; } 

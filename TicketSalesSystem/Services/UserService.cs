@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using TicketSalesSystem.Data;
 using TicketSalesSystem.Models;
 
@@ -18,24 +19,30 @@ namespace TicketSalesSystem.Services
             return _context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
         }
 
-        public bool Register(string username, string password, string email)
+        public bool Register(User newUser)
         {
-            if (_context.Users.Any(u => u.Username == username))
+            try
             {
-                return false; 
+                if (string.IsNullOrEmpty(newUser.Username) || string.IsNullOrEmpty(newUser.Password) || string.IsNullOrEmpty(newUser.Email))
+                {
+                    return false; // Można dodać dodatkową logikę sprawdzania poprawności danych
+                }
+
+                if (_context.Users.Any(u => u.Username == newUser.Username))
+                {
+                    return false; // Użytkownik już istnieje
+                }
+
+                newUser.UserRole = UserRole.User; // Ustawienie domyślnej roli użytkownika
+                _context.Users.Add(newUser);
+                _context.SaveChanges();
+                return true;
             }
-
-            var newUser = new User
+            catch (Exception ex)
             {
-                Username = username,
-                Password = password,
-                Email = email,
-                UserRole = UserRole.User 
-            };
-
-            _context.Users.Add(newUser);
-            _context.SaveChanges();
-            return true;
+                Console.WriteLine($"Exception during registration: {ex.Message}");
+                return false;
+            }
         }
 
         public User GetUserById(int userId)

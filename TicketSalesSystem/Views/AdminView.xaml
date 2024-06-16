@@ -1,8 +1,17 @@
 ﻿<Window x:Class="TicketSalesSystem.Views.AdminView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Admin View" Height="400" Width="600">
+        xmlns:local="clr-namespace:TicketSalesSystem.Views"
+        xmlns:services="clr-namespace:TicketSalesSystem.Services"
+        Title="Admin View" Height="600" Width="800">
     <Grid>
-        <TextBlock Text="Welcome, Admin!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <DataGrid x:Name="dgUsers" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="150"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="200"/>
+                <DataGridTextColumn Header="Role" Binding="{Binding UserRole}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

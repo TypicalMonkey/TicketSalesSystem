@@ -9,8 +9,6 @@ namespace TicketSalesSystem.Models
     public enum Role
     {
         Administrator,
-        Cashier,
-        User,
-        RouteManager
+        User
     }
 }

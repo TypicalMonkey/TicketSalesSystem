@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using TicketSalesSystem.Data;
 using TicketSalesSystem.Models;
 using TicketSalesSystem.Services;
@@ -21,22 +22,33 @@ namespace TicketSalesSystem.Views
             string password = txtPassword.Password;
             string email = txtEmail.Text;
 
-            bool success = _userService.Register(login, password, email);
+            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(email))
+            {
+                MessageBox.Show("Please fill in all fields.");
+                return;
+            }
+
+            User newUser = new User
+            {
+                Username = login,
+                Password = password,
+                Email = email,
+                UserRole = UserRole.User
+            };
+
+            bool success = _userService.Register(newUser);
 
             if (success)
             {
                 MessageBox.Show("User registered successfully.");
-
-                // Automatically log in the user
                 User user = _userService.Login(login, password);
 
                 if (user != null)
                 {
                     UserView userView = new UserView();
                     userView.Show();
-                    this.Close(); // Close the RegisterView window
+                    this.Close();
 
-                    // Close the LoginView window if it's still open
                     foreach (Window window in Application.Current.Windows)
                     {
                         if (window is LoginView)

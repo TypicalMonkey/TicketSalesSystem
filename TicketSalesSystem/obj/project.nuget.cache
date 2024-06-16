@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4N/hUztWpQYFL55x8SVdU/ix8TOjuJSjtHBV//kxearT+tZE/XOivoxhfFHpHJd+m4mmxZLqX6DEdNPyeUgUGQ==",
+  "dgSpecHash": "StiQHlZUovs7CgdtAMGud71cRNjJOebqPCGeo2/r5LHLis0suVZODvkR4zVnd66m655ox2xgdilZog5C8buHrg==",
   "success": true,
   "projectFilePath": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\TicketSalesSystem.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\pance\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\pance\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\pance\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\pance\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.122\\microsoft.xaml.behaviors.wpf.1.1.122.nupkg.sha512",
     "C:\\Users\\pance\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\pance\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\pance\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",

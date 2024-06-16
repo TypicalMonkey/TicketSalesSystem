@@ -139,3 +139,4 @@ D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\View
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\RegisterView.baml
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\AdminView.g.cs
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\RegisterView.g.cs
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll

@@ -192,6 +192,16 @@ namespace TicketSalesSystem.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "pancerny677@interia.pl",
+                            Password = "admin",
+                            UserRole = 0,
+                            Username = "admin"
+                        });
                 });
 
             modelBuilder.Entity("RouteStation", b =>
