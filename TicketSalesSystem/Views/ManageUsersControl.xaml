@@ -18,7 +18,7 @@
     </UserControl.Resources>
 
     <Grid>
-        <DataGrid x:Name="dgUsers" AutoGenerateColumns="False" Margin="20" SelectionMode="Single" CellEditEnding="dgUsers_CellEditEnding">
+        <DataGrid x:Name="dgUsers" AutoGenerateColumns="False" Margin="20" SelectionMode="Single">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Username" Binding="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Width="100"/>

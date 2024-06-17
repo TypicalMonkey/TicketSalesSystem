@@ -36,7 +36,6 @@ namespace TicketSalesSystem.Views
                     {
                         if (train.Id == 0)
                         {
-                            // New train, add it to database
                             context.Trains.Add(train);
                         }
                         else
@@ -44,7 +43,6 @@ namespace TicketSalesSystem.Views
                             var existingTrain = context.Trains.Find(train.Id);
                             if (existingTrain != null)
                             {
-                                // Update existing train
                                 existingTrain.Brand = train.Brand;
                                 existingTrain.Model = train.Model;
                                 existingTrain.Seats = train.Seats;
@@ -61,7 +59,6 @@ namespace TicketSalesSystem.Views
                         context.SaveChanges();
                         MessageBox.Show("Train saved successfully!");
 
-                        // Refresh the DataGrid after saving changes
                         LoadTrains();
                     }
                 }
@@ -71,7 +68,6 @@ namespace TicketSalesSystem.Views
         private void AddTrain_Click(object sender, RoutedEventArgs e)
         {
             var newTrain = new Train();
-            // Optionally initialize default values for new train here
             using (var context = new ApplicationDbContext())
             {
                 context.Trains.Add(newTrain);
@@ -94,7 +90,7 @@ namespace TicketSalesSystem.Views
                         context.Trains.Remove(trainToDelete);
                         context.SaveChanges();
                         MessageBox.Show("Train deleted successfully!");
-                        LoadTrains(); // Refresh the DataGrid
+                        LoadTrains();
                     }
                     else
                     {
@@ -102,12 +98,6 @@ namespace TicketSalesSystem.Views
                     }
                 }
             }
-        }
-
-        private void dgTrains_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
-        {
-            // Handle cell edit ending if needed
-            // Example provided in previous messages
         }
     }
 }

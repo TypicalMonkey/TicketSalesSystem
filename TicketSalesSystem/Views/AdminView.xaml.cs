@@ -44,7 +44,6 @@ namespace TicketSalesSystem.Views
 
         private void BtnLogout_Click(object sender, RoutedEventArgs e)
         {
-            // Implement logout logic here
             this.Close();
         }
     }

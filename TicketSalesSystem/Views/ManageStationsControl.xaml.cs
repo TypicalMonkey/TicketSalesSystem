@@ -91,10 +91,5 @@ namespace TicketSalesSystem.Views
                 }
             }
         }
-
-        private void dgStations_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
-        {
-            // Handle cell edit ending if needed
-        }
     }
 }

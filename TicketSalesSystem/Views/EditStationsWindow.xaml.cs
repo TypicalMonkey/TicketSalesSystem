@@ -20,7 +20,7 @@ namespace TicketSalesSystem.Views
             InitializeComponent();
             this.routeId = routeId;
             UpdatedOrderedStations = new ObservableCollection<OrderedStation>(orderedStations?.OrderBy(s => s.Order).ToList() ?? new List<OrderedStation>());
-            DataContext = this; // Ensure the DataContext is set
+            DataContext = this;
             LoadAllStations();
             LoadOrderedStations(); 
         }
@@ -37,8 +37,8 @@ namespace TicketSalesSystem.Views
                     Debug.WriteLine($"Loaded station: {station.Id} - {station.Name}");
                 }
                 cbAllStations.ItemsSource = allStations;
-                cbAllStations.DisplayMemberPath = "Name"; // Display station names
-                cbAllStations.SelectedValuePath = "Id"; // Use station IDs as values
+                cbAllStations.DisplayMemberPath = "Name";
+                cbAllStations.SelectedValuePath = "Id";
             }
         }
 
@@ -48,12 +48,12 @@ namespace TicketSalesSystem.Views
             {
                 var orderedStations = context.OrderedStations
                     .Where(os => os.RouteId == routeId)
-                    .Include(os => os.Station) // Include the Station details
+                    .Include(os => os.Station)
                     .OrderBy(os => os.Order)
                     .ToList();
 
                 UpdatedOrderedStations = new ObservableCollection<OrderedStation>(orderedStations);
-                lbStations.ItemsSource = UpdatedOrderedStations; // Update the ListView with ordered stations
+                lbStations.ItemsSource = UpdatedOrderedStations;
             }
         }
 
@@ -72,18 +72,17 @@ namespace TicketSalesSystem.Views
                     {
                         route = new Route
                         {
-                            // Set route properties here
                         };
                         context.Routes.Add(route);
                         context.SaveChanges();
-                        routeId = route.Id; // Update routeId to the newly saved route's ID
+                        routeId = route.Id;
                     }
 
                     Debug.WriteLine($"Route found: {route.Id} - {route.Name}");
 
                     var existingOrderedStations = context.OrderedStations.Where(os => os.RouteId == routeId).ToList();
                     context.OrderedStations.RemoveRange(existingOrderedStations);
-                    context.SaveChanges(); // Commit removal before adding new entries
+                    context.SaveChanges();
 
                     foreach (var orderedStation in UpdatedOrderedStations)
                     {
@@ -98,7 +97,7 @@ namespace TicketSalesSystem.Views
                             Debug.WriteLine($"Attaching existing station: {orderedStation.Station.Id} - {orderedStation.Station.Name}");
                         }
 
-                        orderedStation.Id = 0; // Reset the ID for new entries to avoid conflict
+                        orderedStation.Id = 0;
                         orderedStation.RouteId = routeId;
                         Debug.WriteLine($"Adding OrderedStation: Order = {orderedStation.Order}, RouteId = {orderedStation.RouteId}, StationId = {orderedStation.StationId}");
                         context.OrderedStations.Add(orderedStation);

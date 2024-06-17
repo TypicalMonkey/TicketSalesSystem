@@ -122,10 +122,5 @@ namespace TicketSalesSystem.Views
                 }
             }
         }
-
-        private void dgRoutes_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
-        {
-            // Handle cell edit ending if needed
-        }
     }
 }

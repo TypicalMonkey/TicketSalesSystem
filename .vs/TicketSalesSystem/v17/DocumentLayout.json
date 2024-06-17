@@ -3,56 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\enham\\Desktop\\Ticket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\views\\manageroutescontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\manageroutescontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\views\\editstationswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\editstationswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\views\\editstationswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\editstationswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\models\\orderedstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\models\\orderedstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\views\\manageroutescontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\manageroutescontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\models\\route.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\models\\route.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\models\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\models\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\views\\managetrainscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\managetrainscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\views\\managetrainscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\managetrainscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|c:\\users\\enham\\desktop\\ticket\\ticketsalessystem\\views\\registerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4D1294-10AA-413B-8B36-09374E4C7606}|TicketSalesSystem\\TicketSalesSystem.csproj|solutionrelative:ticketsalessystem\\views\\registerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,161 +23,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ManageRoutesControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\ManageRoutesControl.xaml.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\ManageRoutesControl.xaml.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\ManageRoutesControl.xaml.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Views\\ManageRoutesControl.xaml.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAqwEIAAAAjAAAA",
+              "Title": "RegisterView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\RegisterView.xaml.cs",
+              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\RegisterView.xaml.cs",
+              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\RegisterView.xaml.cs",
+              "RelativeToolTip": "TicketSalesSystem\\Views\\RegisterView.xaml.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:09:36.632Z",
+              "WhenOpened": "2024-06-17T14:51:35.98Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderedStation.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\OrderedStation.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Models\\OrderedStation.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\OrderedStation.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Models\\OrderedStation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T12:50:31.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAAG4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:04:16.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditStationsWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\EditStationsWindow.xaml.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\EditStationsWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\EditStationsWindow.xaml.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Views\\EditStationsWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:30:53.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditStationsWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\EditStationsWindow.xaml",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\EditStationsWindow.xaml",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\EditStationsWindow.xaml",
-              "RelativeToolTip": "TicketSalesSystem\\Views\\EditStationsWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-17T08:30:10.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ManageRoutesControl.xaml",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\ManageRoutesControl.xaml",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\ManageRoutesControl.xaml",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\ManageRoutesControl.xaml",
-              "RelativeToolTip": "TicketSalesSystem\\Views\\ManageRoutesControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-17T07:57:30.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Route.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\Route.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Models\\Route.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\Route.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Models\\Route.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T07:58:45.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Station.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\Station.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Models\\Station.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\Station.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Models\\Station.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T09:04:04.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ManageTrainsControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\ManageTrainsControl.xaml.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\ManageTrainsControl.xaml.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\ManageTrainsControl.xaml.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Views\\ManageTrainsControl.xaml.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAA0wHEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:48:11.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AdminService.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Services\\AdminService.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Services\\AdminService.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Services\\AdminService.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Services\\AdminService.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAASwE4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:09:09.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ManageTrainsControl.xaml",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\ManageTrainsControl.xaml",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Views\\ManageTrainsControl.xaml",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Views\\ManageTrainsControl.xaml",
-              "RelativeToolTip": "TicketSalesSystem\\Views\\ManageTrainsControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-17T08:21:27.372Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\User.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\User.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T07:58:17.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "TicketSalesSystem\\Models\\Role.cs",
-              "ToolTip": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\Models\\Role.cs",
-              "RelativeToolTip": "TicketSalesSystem\\Models\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T07:58:10.766Z"
             }
           ]
         }

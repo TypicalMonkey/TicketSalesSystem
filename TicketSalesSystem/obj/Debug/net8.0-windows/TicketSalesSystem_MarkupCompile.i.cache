@@ -16,5 +16,5 @@ C:\Users\enham\Desktop\Ticket\TicketSalesSystem\App.xaml
 217-1036695912
 MainWindow.xaml;Views\AdminView.xaml;Views\EditStationsWindow.xaml;Views\LoginView.xaml;Views\ManageRoutesControl.xaml;Views\ManageStationsControl.xaml;Views\ManageTrainsControl.xaml;Views\ManageUsersControl.xaml;Views\RegisterView.xaml;Views\TicketSaleView.xaml;Views\UserView.xaml;
 
-False
+True
 

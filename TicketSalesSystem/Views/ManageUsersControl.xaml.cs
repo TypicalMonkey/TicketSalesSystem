@@ -34,7 +34,6 @@ namespace TicketSalesSystem.Views
                     {
                         if (user.Id == 0)
                         {
-                            // New user, add it to database
                             context.Users.Add(user);
                         }
                         else
@@ -42,7 +41,6 @@ namespace TicketSalesSystem.Views
                             var existingUser = context.Users.Find(user.Id);
                             if (existingUser != null)
                             {
-                                // Update existing user
                                 existingUser.Username = user.Username;
                                 existingUser.Password = user.Password;
                                 existingUser.Email = user.Email;
@@ -57,7 +55,6 @@ namespace TicketSalesSystem.Views
                         context.SaveChanges();
                         MessageBox.Show("User saved successfully!");
 
-                        // Refresh the DataGrid after saving changes
                         LoadUsers();
                     }
                 }
@@ -67,7 +64,6 @@ namespace TicketSalesSystem.Views
         private void AddUser_Click(object sender, RoutedEventArgs e)
         {
             var newUser = new User();
-            // Optionally initialize default values for new user here
             using (var context = new ApplicationDbContext())
             {
                 context.Users.Add(newUser);
@@ -90,7 +86,7 @@ namespace TicketSalesSystem.Views
                         context.Users.Remove(userToDelete);
                         context.SaveChanges();
                         MessageBox.Show("User deleted successfully!");
-                        LoadUsers(); // Refresh the DataGrid
+                        LoadUsers();
                     }
                     else
                     {
@@ -98,12 +94,6 @@ namespace TicketSalesSystem.Views
                     }
                 }
             }
-        }
-
-        private void dgUsers_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
-        {
-            // Handle cell edit ending if needed
-            // Example provided in previous messages
         }
     }
 }
