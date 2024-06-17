@@ -31,12 +31,12 @@ namespace TicketSalesSystem.Services
         {
             return _context.Routes.ToList();
         }
-        public void AddNewTrain(int brandId, int modelId, int seats, int year, bool hasWifi, string additionalInfo)
+        public void AddNewTrain(string brand, string model, int seats, int year, bool hasWifi, string additionalInfo)
         {
             var newTrain = new Train
             {
-                BrandId = brandId,
-                ModelId = modelId,
+                Brand = brand,
+                Model = model,
                 Seats = seats,
                 Year = year,
                 HasWifi = hasWifi,
@@ -47,13 +47,13 @@ namespace TicketSalesSystem.Services
             _context.SaveChanges();
         }
 
-        public void EditTrain(int trainId, int brandId, int modelId, int seats, int year, bool hasWifi, string additionalInfo)
+        public void EditTrain(int trainId, string brand, string model, int seats, int year, bool hasWifi, string additionalInfo)
         {
             var train = _context.Trains.Find(trainId);
             if (train != null)
             {
-                train.BrandId = brandId;
-                train.ModelId = modelId;
+                train.Brand = brand;
+                train.Model = model;
                 train.Seats = seats;
                 train.Year = year;
                 train.HasWifi = hasWifi;
@@ -77,8 +77,6 @@ namespace TicketSalesSystem.Services
         {
             var newRoute = new Route
             {
-                DepartureStation = departureStation,
-                ArrivalStation = arrivalStation,
                 DepartureTime = departureTime
             };
 
@@ -91,8 +89,6 @@ namespace TicketSalesSystem.Services
             var route = _context.Routes.Find(routeId);
             if (route != null)
             {
-                route.DepartureStation = departureStation;
-                route.ArrivalStation = arrivalStation;
                 route.DepartureTime = departureTime;
 
                 _context.SaveChanges();

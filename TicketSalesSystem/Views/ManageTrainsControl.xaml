@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="TicketSalesSystem.Views.ManageTrainsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:TicketSalesSystem.Views"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <DataGrid x:Name="dgTrains" AutoGenerateColumns="False" Margin="20" SelectionMode="Single" CellEditEnding="dgTrains_CellEditEnding">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Brand" Binding="{Binding Brand, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+                <DataGridTextColumn Header="Model" Binding="{Binding Model, UpdateSourceTrigger=PropertyChanged}" Width="100"/>
+                <DataGridTextColumn Header="Seats" Binding="{Binding Seats, UpdateSourceTrigger=PropertyChanged}" Width="50"/>
+                <DataGridTextColumn Header="Year" Binding="{Binding Year, UpdateSourceTrigger=PropertyChanged}" Width="75"/>
+                <DataGridCheckBoxColumn Header="Has Wifi" Binding="{Binding HasWifi, UpdateSourceTrigger=PropertyChanged}" Width="75"/>
+                <DataGridTextColumn Header="Additional Info" Binding="{Binding AdditionalInfo, UpdateSourceTrigger=PropertyChanged}" Width="200"/>
+                <DataGridTemplateColumn Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Save" Click="SaveTrain_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete" Width="80" Click="DeleteTrain_Click" HorizontalAlignment="Center"
+                            VerticalAlignment="Center" Tag="{Binding Id}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

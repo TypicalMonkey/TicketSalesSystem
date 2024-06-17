@@ -7,7 +7,7 @@ namespace TicketSalesSystem.Views
 {
     public partial class LoginView : Window
     {
-        private readonly UserService _userService;
+        private UserService _userService;
 
         public LoginView()
         {
@@ -27,7 +27,7 @@ namespace TicketSalesSystem.Views
                 switch (user.UserRole)
                 {
                     case UserRole.Admin:
-                        AdminView adminView = new AdminView();
+                        AdministratorView adminView = new AdministratorView();
                         adminView.Show();
                         break;
                     case UserRole.User:

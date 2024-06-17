@@ -9,10 +9,8 @@ namespace TicketSalesSystem.Models
     public class Train
     {
         public int Id { get; set; }
-        public int BrandId { get; set; }
-        public Brand Brand { get; set; }
-        public int ModelId { get; set; }
-        public Model Model { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
         public int Seats { get; set; }
         public int Year { get; set; }
         public bool HasWifi { get; set; }

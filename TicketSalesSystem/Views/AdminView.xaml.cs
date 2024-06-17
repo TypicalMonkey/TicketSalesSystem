@@ -1,23 +1,51 @@
 ﻿using System.Windows;
-using TicketSalesSystem.Data;
-using TicketSalesSystem.Services;
 
 namespace TicketSalesSystem.Views
 {
-    public partial class AdminView : Window
+    public partial class AdministratorView : Window
     {
-        private readonly AdminService _adminService;
-
-        public AdminView()
+        public AdministratorView()
         {
-            InitializeComponent();
-            _adminService = new AdminService(new ApplicationDbContext());
-            LoadUsers();
+                    InitializeComponent();
         }
 
-        private void LoadUsers()
+        private void BtnManageTrains_Click(object sender, RoutedEventArgs e)
         {
-            dgUsers.ItemsSource = _adminService.GetAllUsers();
+            manageTrainsControl.Visibility = Visibility.Visible;
+            manageRoutesControl.Visibility = Visibility.Collapsed;
+            manageUsersControl.Visibility = Visibility.Collapsed;
+            manageStationsControl.Visibility = Visibility.Collapsed;
+        }
+
+        private void BtnManageRoutes_Click(object sender, RoutedEventArgs e)
+        {
+            manageTrainsControl.Visibility = Visibility.Collapsed;
+            manageRoutesControl.Visibility = Visibility.Visible;
+            manageUsersControl.Visibility = Visibility.Collapsed;
+            manageStationsControl.Visibility = Visibility.Collapsed;
+        }
+
+        private void BtnManageUsers_Click(object sender, RoutedEventArgs e)
+        {
+            manageTrainsControl.Visibility = Visibility.Collapsed;
+            manageRoutesControl.Visibility = Visibility.Collapsed;
+            manageUsersControl.Visibility = Visibility.Visible;
+            manageStationsControl.Visibility = Visibility.Collapsed;
+        }
+
+        private void BtnManageStations_Click(object sender, RoutedEventArgs e)
+        {
+            manageTrainsControl.Visibility = Visibility.Collapsed;
+            manageRoutesControl.Visibility = Visibility.Collapsed;
+            manageUsersControl.Visibility = Visibility.Collapsed;
+            manageStationsControl.Visibility = Visibility.Visible;
+        }
+
+
+        private void BtnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            // Implement logout logic here
+            this.Close();
         }
     }
 }

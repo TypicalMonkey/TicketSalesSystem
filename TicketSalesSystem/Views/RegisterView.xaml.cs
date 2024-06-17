@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.ComponentModel;
 using System.Windows;
 using TicketSalesSystem.Data;
 using TicketSalesSystem.Models;
@@ -6,42 +6,47 @@ using TicketSalesSystem.Services;
 
 namespace TicketSalesSystem.Views
 {
-    public partial class RegisterView : Window
+    public partial class RegisterView : Window, INotifyPropertyChanged
     {
         private readonly UserService _userService;
+        private User _user;
 
         public RegisterView()
         {
             InitializeComponent();
             _userService = new UserService(new ApplicationDbContext());
+            User = new User();
+            DataContext = this;
+        }
+
+        public User User
+        {
+            get => _user;
+            set
+            {
+                _user = value;
+                OnPropertyChanged(nameof(User));
+            }
         }
 
         private void BtnRegister_Click(object sender, RoutedEventArgs e)
         {
-            string login = txtLogin.Text;
             string password = txtPassword.Password;
-            string email = txtEmail.Text;
 
-            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(email))
+            if (string.IsNullOrEmpty(User.Username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(User.Email))
             {
                 MessageBox.Show("Please fill in all fields.");
                 return;
             }
 
-            User newUser = new User
-            {
-                Username = login,
-                Password = password,
-                Email = email,
-                UserRole = UserRole.User
-            };
+            User.Password = password;
 
-            bool success = _userService.Register(newUser);
+            bool success = _userService.Register(User);
 
             if (success)
             {
                 MessageBox.Show("User registered successfully.");
-                User user = _userService.Login(login, password);
+                User user = _userService.Login(User.Username, password);
 
                 if (user != null)
                 {
@@ -67,6 +72,13 @@ namespace TicketSalesSystem.Views
             {
                 MessageBox.Show("Registration failed.");
             }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

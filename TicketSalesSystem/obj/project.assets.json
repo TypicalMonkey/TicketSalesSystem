@@ -2611,24 +2611,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pance\\.nuget\\packages\\": {},
-    "D:\\Microsoft Visual Studio SDK\\NuGetPackages": {}
+    "C:\\Users\\enham\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\TicketSalesSystem.csproj",
+      "projectUniqueName": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\TicketSalesSystem.csproj",
       "projectName": "TicketSalesSystem",
-      "projectPath": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\TicketSalesSystem.csproj",
-      "packagesPath": "C:\\Users\\pance\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\C#\\TicketSalesSystem\\TicketSalesSystem\\obj\\",
+      "projectPath": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\TicketSalesSystem.csproj",
+      "packagesPath": "C:\\Users\\enham\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\enham\\Desktop\\Ticket\\TicketSalesSystem\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Microsoft Visual Studio SDK\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\pance\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\enham\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

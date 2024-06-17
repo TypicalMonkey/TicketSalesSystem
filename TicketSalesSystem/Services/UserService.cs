@@ -7,7 +7,7 @@ namespace TicketSalesSystem.Services
 {
     internal class UserService
     {
-        private readonly ApplicationDbContext _context;
+        private ApplicationDbContext _context;
 
         public UserService(ApplicationDbContext context)
         {
@@ -33,7 +33,7 @@ namespace TicketSalesSystem.Services
                     return false; // Użytkownik już istnieje
                 }
 
-                newUser.UserRole = UserRole.User; // Ustawienie domyślnej roli użytkownika
+                newUser.UserRole = UserRole.User;// Ustawienie domyślnej roli użytkownika
                 _context.Users.Add(newUser);
                 _context.SaveChanges();
                 return true;

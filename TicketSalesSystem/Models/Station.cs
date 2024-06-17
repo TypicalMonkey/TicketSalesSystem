@@ -10,6 +10,5 @@ namespace TicketSalesSystem.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public DateTime ArrivalTime { get; set; }
     }
 }

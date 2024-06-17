@@ -10,19 +10,28 @@
     <Compile Update="Views\AdminView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\EditStationsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\LoginView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ManageStationsControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\RegisterView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\RouteManagerView.xaml.cs">
+    <Compile Update="Views\ManageRoutesControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\TicketSaleView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\UserManagementView.xaml.cs">
+    <Compile Update="Views\ManageTrainsControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ManageUsersControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\UserView.xaml.cs">
@@ -36,19 +45,28 @@
     <Page Update="Views\AdminView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\EditStationsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ManageStationsControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\RegisterView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\RouteManagerView.xaml">
+    <Page Update="Views\ManageRoutesControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\TicketSaleView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\UserManagementView.xaml">
+    <Page Update="Views\ManageTrainsControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ManageUsersControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserView.xaml">

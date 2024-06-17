@@ -15,8 +15,6 @@
 
         <StackPanel Grid.Row="1" Orientation="Vertical" Background="#F0F0F0" Width="200">
             <Button Content="Login" Width="180" Margin="10" />
-            <Button Content="Ticket Sale" Width="180" Margin="10"/>
-            <Button Content="User Management" Width="180" Margin="10" />
         </StackPanel>
 
         <Frame x:Name="MainFrame" Grid.Row="1" Margin="200 0 0 0"/>

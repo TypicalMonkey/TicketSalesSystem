@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\
+C:\Users\enham\Desktop\Ticket\TicketSalesSystem\obj\Debug\net8.0-windows\
 TicketSalesSystem
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\App.xaml
-8271335389
+C:\Users\enham\Desktop\Ticket\TicketSalesSystem\App.xaml
+11247950529
 
-33-1727616218
-2172075832371
-MainWindow.xaml;Views\AdminView.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\RouteManagerView.xaml;Views\TicketSaleView.xaml;Views\UserManagementView.xaml;Views\UserView.xaml;
+27-2088310898
+217-1036695912
+MainWindow.xaml;Views\AdminView.xaml;Views\EditStationsWindow.xaml;Views\LoginView.xaml;Views\ManageRoutesControl.xaml;Views\ManageStationsControl.xaml;Views\ManageTrainsControl.xaml;Views\ManageUsersControl.xaml;Views\RegisterView.xaml;Views\TicketSaleView.xaml;Views\UserView.xaml;
 
 False
 
