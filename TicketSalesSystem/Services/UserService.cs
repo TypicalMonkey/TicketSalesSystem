@@ -25,15 +25,15 @@ namespace TicketSalesSystem.Services
             {
                 if (string.IsNullOrEmpty(newUser.Username) || string.IsNullOrEmpty(newUser.Password) || string.IsNullOrEmpty(newUser.Email))
                 {
-                    return false; // Można dodać dodatkową logikę sprawdzania poprawności danych
+                    return false; 
                 }
 
                 if (_context.Users.Any(u => u.Username == newUser.Username))
                 {
-                    return false; // Użytkownik już istnieje
+                    return false;
                 }
 
-                newUser.UserRole = UserRole.User;// Ustawienie domyślnej roli użytkownika
+                newUser.UserRole = UserRole.User;
                 _context.Users.Add(newUser);
                 _context.SaveChanges();
                 return true;

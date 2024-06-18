@@ -31,8 +31,8 @@ namespace TicketSalesSystem.Views
                         adminView.Show();
                         break;
                     case UserRole.User:
-                        UserView userView = new UserView();
-                        userView.Show();
+                        TicketSaleView ticketSaleView = new TicketSaleView(user);
+                        ticketSaleView.Show();
                         break;
                 }
                 this.Close();

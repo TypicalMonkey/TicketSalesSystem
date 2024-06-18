@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\AdminView.xaml.cs">
+    <Compile Update="Views\AdministratorView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\EditStationsWindow.xaml.cs">
@@ -42,7 +42,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\AdminView.xaml">
+    <Page Update="Views\AdministratorView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\EditStationsWindow.xaml">
