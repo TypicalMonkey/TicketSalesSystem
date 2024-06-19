@@ -89,6 +89,9 @@ namespace TicketSalesSystem.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("EndStationId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
@@ -98,10 +101,21 @@ namespace TicketSalesSystem.Migrations
                     b.Property<int>("RouteId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("TrainId")
+                    b.Property<int>("StartStationId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EndStationId");
+
+                    b.HasIndex("RouteId");
+
+                    b.HasIndex("StartStationId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Tickets", (string)null);
                 });
@@ -204,9 +218,49 @@ namespace TicketSalesSystem.Migrations
                     b.Navigation("Station");
                 });
 
+            modelBuilder.Entity("TicketSalesSystem.Models.Ticket", b =>
+                {
+                    b.HasOne("TicketSalesSystem.Models.Station", "EndStation")
+                        .WithMany()
+                        .HasForeignKey("EndStationId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Route", "Route")
+                        .WithMany()
+                        .HasForeignKey("RouteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TicketSalesSystem.Models.Station", "StartStation")
+                        .WithMany()
+                        .HasForeignKey("StartStationId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("TicketSalesSystem.Models.User", "User")
+                        .WithMany("Tickets")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("EndStation");
+
+                    b.Navigation("Route");
+
+                    b.Navigation("StartStation");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Route", b =>
                 {
                     b.Navigation("OrderedStations");
+                });
+
+            modelBuilder.Entity("TicketSalesSystem.Models.User", b =>
+                {
+                    b.Navigation("Tickets");
                 });
 #pragma warning restore 612, 618
         }

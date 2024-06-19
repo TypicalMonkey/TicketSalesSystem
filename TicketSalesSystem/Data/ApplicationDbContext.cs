@@ -16,7 +16,7 @@ namespace TicketSalesSystem.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {   
-            var dbPath = @"C:\Users\enham\Desktop\Ticket\TicketSalesSystem\TicketSellerSystem.db";
+            var dbPath = @"D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\TicketSellerSystem.db";
             optionsBuilder
                 .UseSqlite($"Data Source={dbPath}")
                 .EnableSensitiveDataLogging()
@@ -38,6 +38,10 @@ namespace TicketSalesSystem.Data
                 entity.Property(u => u.Username).IsRequired();
                 entity.Property(u => u.Password).IsRequired();
                 entity.Property(u => u.Email).IsRequired();
+                entity.HasMany(u => u.Tickets)
+                      .WithOne(t => t.User)
+                      .HasForeignKey(t => t.UserId)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<User>().HasData(
@@ -103,10 +107,37 @@ namespace TicketSalesSystem.Data
                 entity.ToTable("Tickets");
                 entity.HasKey(t => t.Id);
                 entity.Property(t => t.Id).ValueGeneratedOnAdd();
-                entity.Property(t => t.RouteId).IsRequired();
                 entity.Property(t => t.PurchaseDate).IsRequired();
                 entity.Property(t => t.Price).IsRequired();
+
+                entity.HasOne(t => t.Route)
+                      .WithMany()
+                      .HasForeignKey(t => t.RouteId)
+                      .OnDelete(DeleteBehavior.Cascade)
+                      .IsRequired();
+
+                entity.HasOne(t => t.StartStation)
+                      .WithMany()
+                      .HasForeignKey(t => t.StartStationId)
+                      .OnDelete(DeleteBehavior.Restrict)
+                      .IsRequired();
+
+                entity.HasOne(t => t.EndStation)
+                      .WithMany()
+                      .HasForeignKey(t => t.EndStationId)
+                      .OnDelete(DeleteBehavior.Restrict)
+                      .IsRequired();
+
+                entity.HasOne(t => t.User)
+                      .WithMany(u => u.Tickets)
+                      .HasForeignKey(t => t.UserId)
+                      .OnDelete(DeleteBehavior.Cascade)
+                      .IsRequired();
             });
+            modelBuilder.Entity<Station>().ToTable("Stations");
+            modelBuilder.Entity<Station>().HasKey(s => s.Id);
+            modelBuilder.Entity<Station>().Property(s => s.Id).ValueGeneratedOnAdd();
+            modelBuilder.Entity<Station>().Property(s => s.Name).IsRequired();
         }
 
     }

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Net;
-using System.Net.Mail;
 using System.Windows;
 using TicketSalesSystem.Data;
 using TicketSalesSystem.Models;
@@ -35,27 +33,23 @@ namespace TicketSalesSystem.Views
             if (cbRoutes.SelectedItem is Route selectedRoute)
             {
                 _selectedRoute = selectedRoute;
-                cbStartStation.ItemsSource = selectedRoute.OrderedStations.Select(os => os.Station).ToList();
-                cbEndStation.ItemsSource = selectedRoute.OrderedStations.Select(os => os.Station).ToList();
+                LoadStations(selectedRoute.Id);
             }
         }
 
         private void LoadStations(int routeId)
         {
-            using (var context = new ApplicationDbContext())
-            {
-                var stations = context.OrderedStations
-                    .Where(os => os.RouteId == routeId)
-                    .OrderBy(os => os.Order)
-                    .Select(os => os.Station)
-                    .ToList();
+            var stations = _context.OrderedStations
+                .Where(os => os.RouteId == routeId)
+                .OrderBy(os => os.Order)
+                .Select(os => os.Station)
+                .ToList();
 
-                cbStartStation.ItemsSource = stations;
-                cbStartStation.SelectedIndex = 0;
+            cbStartStation.ItemsSource = stations;
+            cbStartStation.SelectedIndex = 0;
 
-                cbEndStation.ItemsSource = stations;
-                cbEndStation.SelectedIndex = stations.Count - 1;
-            }
+            cbEndStation.ItemsSource = stations;
+            cbEndStation.SelectedIndex = stations.Count - 1;
         }
 
         private void CbStartStation_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -110,9 +104,12 @@ namespace TicketSalesSystem.Views
                     Price = CalculatePrice(_startStation, _endStation),
                     RouteId = _selectedRoute.Id,
                     StartStationId = _startStation.Id,
-                    EndStationId = _endStation.Id,
+                    EndStationId = _endStation.Id,    
                     UserId = _currentUser.Id
                 };
+
+                newTicket.StartStation = _startStation;
+                newTicket.EndStation = _endStation;
 
                 _context.Tickets.Add(newTicket);
                 _context.SaveChanges();
@@ -129,6 +126,11 @@ namespace TicketSalesSystem.Views
                 MessageBox.Show("Proszę wybrać wszystkie pola.");
             }
         }
-
+        private void BtnReturn_Click(object sender, RoutedEventArgs e)
+        {
+            var userView = new UserView(_currentUser);
+            userView.Show();
+            Close();
+        }
     }
 }

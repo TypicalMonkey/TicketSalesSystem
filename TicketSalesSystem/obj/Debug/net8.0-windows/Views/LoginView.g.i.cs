@@ -68,7 +68,7 @@ namespace TicketSalesSystem.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TicketSalesSystem;component/views/loginview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TicketSalesSystem;V1.0.0.0;component/views/loginview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\LoginView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

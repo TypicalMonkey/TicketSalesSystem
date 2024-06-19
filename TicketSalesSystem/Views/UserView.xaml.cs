@@ -1,27 +1,55 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using TicketSalesSystem.Data;
+using TicketSalesSystem.Models;
 
 namespace TicketSalesSystem.Views
 {
-    /// <summary>
-    /// Logika interakcji dla klasy UserView.xaml
-    /// </summary>
     public partial class UserView : Window
     {
-        public UserView()
+        private readonly ApplicationDbContext _context;
+        private readonly User _currentUser;
+
+        public UserView(User currentUser)
         {
             InitializeComponent();
+            _context = new ApplicationDbContext();
+            _currentUser = currentUser;
+        }
+
+        private void BtnPurchaseTicket_Click(object sender, RoutedEventArgs e)
+        {
+            var ticketSaleView = new TicketSaleView(_currentUser);
+            ticketSaleView.Show();
+            this.Close();
+        }
+
+        private void BtnShowTickets_Click(object sender, RoutedEventArgs e)
+        {
+            var ticketsView = new TicketsView(_currentUser);
+            ticketsView.Show();
+            this.Close();
+            //TicketsView.Visibility = Visibility.Visible;
+        }
+
+        private void BtnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            var loginView = new LoginView();
+            loginView.Show();
+            this.Close();
+        }
+
+        private void LoadUserTickets()
+        {
+            var userTickets = _context.Tickets
+                .Where(t => t.UserId == _currentUser.Id)
+                .ToList();
+
+            foreach (var ticket in userTickets)
+            {
+                Console.WriteLine($"ID: {ticket.Id}, Trasa: {ticket.Route.Name}, Cena: {ticket.Price}");
+            }
         }
     }
 }

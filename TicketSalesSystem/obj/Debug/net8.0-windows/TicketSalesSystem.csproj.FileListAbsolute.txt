@@ -296,3 +296,5 @@ D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\View
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\ManageUsersControl.baml
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\AdministratorView.g.cs
 D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\AdministratorView.baml
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\TicketsView.baml
+D:\Projects\C#\TicketSalesSystem\TicketSalesSystem\obj\Debug\net8.0-windows\Views\TicketsView.g.cs

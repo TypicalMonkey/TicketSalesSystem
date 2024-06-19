@@ -1,8 +1,22 @@
 ﻿<Window x:Class="TicketSalesSystem.Views.UserView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="User View" Height="400" Width="600">
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicketSalesSystem.Views"
+        mc:Ignorable="d"
+        Title="User View" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="Welcome, User!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="10">
+            <Button Content="Kup bilet" Name="btnPurchaseTicket" Margin="0 10" Click="BtnPurchaseTicket_Click"/>
+            <Button Content="Pokaż zakupione bilety" Name="btnShowTickets" Margin="0 10" Click="BtnShowTickets_Click"/>
+            <Button Content="Wyloguj" Name="btnLogout" Margin="0 10" Click="BtnLogout_Click"/>
+        </StackPanel>
+        <Grid Grid.Column="1" Margin="10">
+        </Grid>
     </Grid>
 </Window>

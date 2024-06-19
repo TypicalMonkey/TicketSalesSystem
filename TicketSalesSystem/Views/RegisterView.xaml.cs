@@ -50,7 +50,7 @@ namespace TicketSalesSystem.Views
 
                 if (user != null)
                 {
-                    UserView userView = new UserView();
+                    UserView userView = new UserView(user);
                     userView.Show();
                     this.Close();
 

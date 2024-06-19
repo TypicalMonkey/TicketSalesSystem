@@ -16,7 +16,8 @@
             <TextBlock Text="Total Price:" Margin="0 0 0 5"/>
             <TextBlock x:Name="txtTotalPrice" Margin="0 0 0 20"/>
 
-            <Button Content="Purchase Ticket" Click="BtnPurchaseTicket_Click" Width="150" HorizontalAlignment="Center"/>
+            <Button Content="Purchase Ticket" Click="BtnPurchaseTicket_Click" Width="150" HorizontalAlignment="Center" Margin="0 10"/>
+            <Button Content="Return to User View" Click="BtnReturn_Click" Width="150" HorizontalAlignment="Center"/>
         </StackPanel>
     </Grid>
 </Window>
